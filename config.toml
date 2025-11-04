@@ -1,5 +1,5 @@
-
-#theme = ""
+# editor theme, by default it's the purple one
+#theme = "default"
 
 [editor]
 scrolloff = 999
