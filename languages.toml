@@ -22,10 +22,13 @@ language-servers = [ "scls", "clangd" ]
 [[language]]
 name = "java"
 language-servers = [ "scls", "jdtls"]
-# add java and python...
+
+[[language]]
+name = "python"
+language-servers = [ "scls", "pyright", "ruff-lsp" ]
+
 
 # --> introduce a new language to enable completion on any doc by forcing set language with :set-language stub
-
 #[[language]]
 #name = "stub"
 #scope = "text.stub"
