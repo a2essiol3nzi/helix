@@ -1,5 +1,5 @@
 # editor theme, by default it's the purple one
-theme = "everforest_dark"
+theme = "poimandres_storm"
 
 [editor]
 scrolloff = 999
@@ -35,7 +35,6 @@ skip-levels = 1
 
 # INSERT MODE
 [keys.insert]
-"tab" = "insert_tab"
 #"C-<left>" = "move_prev_word_start"
 #"C-<right>" = "move_next_word_start"
 

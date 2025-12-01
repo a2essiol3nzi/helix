@@ -5,7 +5,7 @@
 command = "simple-completion-language-server"
 
 [language-server.scls.config]
-feature_words = true                # enable completion by word
+feature_words = true                 # enable completion by word
 feature_snippets = true              # enable snippets
 snippets_first = true                # completions will return before snippets by default
 snippets_inline_by_word_tail = false # suggest snippets by WORD tail, for example text `xsq|` become `x^2|` when snippet `sq` has body `^2`
@@ -21,12 +21,18 @@ language-servers = [ "scls", "clangd" ]
 
 [[language]]
 name = "java"
-language-servers = [ "scls", "jdtls"]
+language-servers = [ "scls", "jdtls" ]
 
 [[language]]
 name = "python"
 language-servers = [ "scls", "pyright", "ruff-lsp" ]
 
+[[language]]
+name = "json"
+language-servers = [ "scls", "vscode-json-language-server" ]
+file-types = [
+  { glob = "config" }
+]
 
 # --> introduce a new language to enable completion on any doc by forcing set language with :set-language stub
 #[[language]]
